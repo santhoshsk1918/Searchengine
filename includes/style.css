@@ -1,0 +1,151 @@
+body { margin: 0px; font-family: Tahoma, Geneva, sans-serif; font-size: 14px; }
+/* PAGE TOP */
+#pageTop {
+background:url(mslever.png) repeat-x;
+height: 90px;
+}
+#pageTop > #pageTopWrap {
+width: 1000px;
+margin: 0px auto;
+height: 90px;
+}
+#pageTop > #pageTopWrap > #pageTopLogo {
+float: left;
+height: 45px;
+width: 300px;
+}
+/*Top end*/
+
+/*Page Middle*/
+
+#pageMiddle{
+width: 1000px;
+margin: 0px auto;
+height: 1200px;
+}
+
+/*Middle End*/
+
+/* PAGE BOTTOM */
+#pageBottom{
+background:#666;
+padding: 24px;
+font-size: 12px;
+color: #CCC;
+text-align: center;
+}
+/*page bottom end*/
+
+.buttons {
+        -moz-box-shadow: 0px 1px 0px 0px #3293ed;
+        -webkit-box-shadow: 0px 1px 0px 0px #3293ed;
+        box-shadow: 0px 1px 0px 0px #3293ed;
+        background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3293ed), color-stop(1, #9bcfec) );
+        background:-moz-linear-gradient( center top, #3293ed 5%, #9bcfec 100% );
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#3293ed', endColorstr='#9bcfec');
+        background-color:#3293ed;
+        -moz-border-radius:20px;
+        -webkit-border-radius:20px;
+        border-radius:20px;
+        border:1px solid #eda933;
+        display:inline-block;
+        color:#ffffff;
+        font-family:arial;
+        font-size:14px;
+        font-weight:bold;
+        padding:2px 10px;
+        text-decoration:none;
+        text-shadow: 1px 1px 5px #303030;
+}
+.buttons:hover {
+        background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #9bcfec), color-stop(1, #3293ed) );
+        background:-moz-linear-gradient( center top, #9bcfec 5%, #3293ed 100% );
+        filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#9bcfec', endColorstr='#3293ed');
+        background-color:#9bcfec;
+}
+.buttons:active {
+        position:relative;
+        top:1px;
+}
+#h3heading{
+color:#700bed;  
+}
+#SUlink{
+	display:block;
+	float:left;
+}
+#SUlink > a{
+	text-decoration:none;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-style:italic;
+	font-size:25px;
+	color:#06C;	
+}
+#SUlink > a:hover{
+	text-decoration:none;
+	color:#06C;
+	color:#960;	
+}
+#uploading{
+	color:#09F;
+	display:block;
+	padding-top:6px;
+}
+
+.field{
+	margin-bottom:7px;
+
+}
+
+.field:hover .hint{
+	position:absolute;
+	display:block;
+	margin:-30px 0 30  100px;
+	font-size:15px;
+	color:white;
+	padding:7px 10px;
+	background:rgba(0,0,0,0.6);
+	border-radius:7px;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+}
+.hint{
+	display:none;
+}
+.error{
+	
+	background-color:red;
+	font-weight:200;
+	color:#FFF;
+		
+}
+h3{
+	color:#9999FF;
+}
+#Search{
+ 	/*width:800px!important;*/
+	color:#03F;
+	border-radius:7px;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	
+	
+}
+#label{
+color:#069eed;
+float: left;
+display:block;
+margin-right: 10px;
+text-align: right;
+width: 120px;
+
+}
+#Searchs{
+	
+	border-radius:7px;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	
+	
+	
+}

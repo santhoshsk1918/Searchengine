@@ -1,0 +1,23 @@
+This feature lets people upload both text and binary files. With PHP's authentication and file manipulation functions, you have full control over who is allowed to upload and what is to be done with the file once it has been uploaded.
+
+PHP is capable of receiving file uploads from any RFC-1867 compliant browser.
+
+Note: Related Configurations Note
+See also the file_uploads, upload_max_filesize, upload_tmp_dir, post_max_size and max_input_time directives in php.ini
+PHP also supports PUT-method file uploads as used by Netscape Composer and W3C's Amaya clients. See the PUT Method Support for more details.
+
+Example #1 File Upload Form
+
+A file upload screen can be built by creating a special form which looks something like this:
+
+<!-- The data encoding type, enctype, MUST be specified as below -->
+<form enctype="multipart/form-data" action="__URL__" method="POST">
+    <!-- MAX_FILE_SIZE must precede the file input field -->
+    <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+    <!-- Name of input element determines name in $_FILES array -->
+    Send this file: <input name="userfile" type="file" />
+    <input type="submit" value="Send File" />
+</form>
+The __URL__ in the above example should be replaced, and point to a PHP file.
+
+The MAX_FILE_SIZE hidden field (measured in bytes) must precede the file input field, and its value is the maximum filesize accepted by PHP. This form element should always be used as it saves users the trouble of waiting for a big file being transferred only to find that it was too large and the transfer failed. Keep in mind: fooling this setting on the browser side is quite easy, so never rely on files with a greater size being blocked by this feature. It is merely a convenience feature for users on the client side of the application. The PHP settings (on the server side) for maximum-size, however, cannot be fooled.
